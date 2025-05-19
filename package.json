@@ -1,0 +1,18 @@
+{
+  "name": "project003",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Frontend": "cd Frontend/A-NoteBook && npm run dev",
+    "Backend": "cd Backend && node index.js",
+    "both": "concurrently -n \" Frontend,Backend \" -c \"bgBlue , BgYellow\" \" npm run Frontend \" \"npm run Backend \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
